@@ -7,8 +7,8 @@ interface Props {
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }: Props) =>
-    scrollNav ? "#e2aebd" : "transparent"};
-  background: #e2aebd;
+    scrollNav ? "#9A86A4" : "transparent"};
+  background: #9A86A4;
   height: 10vh;
   width: 100%;
   margin-left: 0;
@@ -19,6 +19,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  color: white;
 
   @media screen and(max-width:960px) {
     transition: 0.8s all ease;
@@ -34,18 +35,18 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 export const NavLogo = styled(LinkS)`
-  color: "black";
+  color: white;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
   &:hover {
-    color: "green";
-    font-size: 1.5rem;
+    color: #ecebed;
+    font-size: 2rem;
   }
 `;
 export const MobileIcon = styled.div`
@@ -81,7 +82,7 @@ export const NavItem = styled.li`
   font-weight: 500;
 `;
 export const NavLinks = styled(LinkS)`
-  color: "black";
+  color: white;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -90,12 +91,12 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: "green";
+    color: azure;
     height: 100%;
   }
 
   &.active {
     border-bottom: 4px solid #e4e9ff;
-    color: "yellow";
+    color: azure;
   }
 `;

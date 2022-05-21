@@ -1,5 +1,6 @@
 .form2container {
-  background: linear-gradient(345deg, #fff 72%, #e2aebd 100%);
+  /* background: linear-gradient(345deg, #fff 72%, #e2aebd 100%); */
+  background:#fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,11 +20,11 @@
 .title2 {
   font-weight: 800;
   font-size: 50px;
-  color: #e9b2bc;
+  color: #9A86A4;
 }
 .formHR2 {
   width: 70%;
-  color: #e9b2bc;
+  color: #9A86A4;
 }
 .formBody {
   width: 60%;

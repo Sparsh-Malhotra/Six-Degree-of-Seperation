@@ -24,6 +24,11 @@ const AddRelationship: React.FC = (props) => {
       user1Ref.current.textContent,
       user2Ref.current.textContent
     );
+    user1Ref.current.innerHTML = "";
+    user1Ref.current.blur();
+    user2Ref.current.innerText = "";
+    user2Ref.current.blur();
+    console.log(user1Ref);
   };
 
   return (

@@ -22,11 +22,12 @@
 .titleS {
   font-weight: 800;
   font-size: 50px;
-  color: #e9b2bc;
+  color: #9A86A4;
 }
 .formHRS {
-  width: 70%;
-  color: #e9b2bc;
+  width: 100%;
+  color: #9A86A4;
+  margin-bottom: 3rem;
 }
 .formBodyS {
   width: 100%;
