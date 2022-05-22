@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Internship Assignment Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://media.giphy.com/media/6iF22N9JZnMTx7VJgq/giphy.gif)
 
-## Available Scripts
+It is said that all people on average are six, or fewer, social connections away from each other. This React Web App helps you find the degree of separation between any two people.
 
-In the project directory, you can run:
+Think of it as selecting two users on Facebook and trying to see how these two people are connected.
 
-### `npm start`
+For example, if you have the following relationships added into your system...
+1. Sameer is a Friend of Aayushi
+2. Aayushi is a Friend of Bhaskar
+3. Sameer is a Friend of Kamalnath Sharma
+4. Kamalnath Sharma is a Friend of Shanti Kumar Saha
+5. Shanti Kumar Saha is a Friend of Bhaskar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you select two people, let’s say Sameer and Bhaskar, the application show the degree of separation as follows.
+1. Sameer > Aayushi > Bhaskar
+2. Sameet > Kamalnath Sharma > Shanti Kumar Saha > Bhaskar
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Requirements
 
-### `npm test`
+This skeleton requires **Node** to install and run. To install, follow the instructions for your operating system at [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Alternatively the official Node docker image can be used. Instructions can be found on the [official Node docker image site](https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image).
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_All the following notes assume you are at the command prompt for your chosen environment._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Confirm Node is installed and configured correctly, the following command should return the relevant version number.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        > node --version
 
-### `npm run eject`
+2.  Clone the project from GitHub
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3.  Install all the necessary project dependencies by running
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        > npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running and Building the Application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Scripts for running, testing, and building the application are provided as part of the standard configuration. These are run using NPM and listed in the scripts section of the package.json file.
 
-## Learn More
+From the project directory, you can run any of the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `> npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  Runs the app in the development mode at [http://localhost:3000](http://localhost:3000). The app will recompile and restart if you make any edits to the source files. Any linting errors will also be shown in the console.
+
+- `> npm test`
+
+  Launches the test runner in the interactive watch mode. See the [testing](#testing) section for more information.
+
+- `> npm build`
+
+  Builds the app for production to the `build` folder. The build is minified and any JSX is transpiled to JavaScript. Your app is ready to be deployed!
+
+
