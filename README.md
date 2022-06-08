@@ -1,4 +1,4 @@
-# Internship Assignment Submission
+# Six Degree Of Seperation
 
 ![](https://media.giphy.com/media/6iF22N9JZnMTx7VJgq/giphy.gif)
 
